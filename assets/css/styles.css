@@ -1,0 +1,67 @@
+.one, .two{
+    color: white !important;
+    font-size: 50px !important;
+    font-weight: bold !important;
+}
+.one1{
+    color: white !important;
+    font-size: 50px !important;
+    font-weight: bold !important;
+}
+.one{
+    float: left !important;
+}
+.two{
+    float: right !important;
+}
+.three{
+    color: white !important;
+    text-align: center;
+    font-weight: bold !important;
+    font-size: 1.5rem !important;
+    margin-top: 20px !important;
+}
+.featured-services{
+    background: url("../img/featured-services-bg.jpg");
+    padding: 10px !important;
+}
+.four{
+    background: url("../img/services-below-bg.jpg");
+}
+.five{
+    float: right !important;
+}
+.six{
+    float: right !important;
+}
+.seven{
+    font-size: 30px !important;
+    font-weight: bold;
+    padding: 20px !important;
+    margin: 20px !important;
+}
+.eight{
+    float: right !important;
+}
+.final{
+    color: black !important;
+    background-image: url(https://lh6.googleusercontent.com/CgaGXyI7QFv0l2XOCy-ZgkxdMz083_aNowIZw4bUKV51ZMvE_5qc6pr2UuPMhm0ZXfo7QpwIdQTB3HIUT7uChYk=w16383);
+}
+.nine{
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.a{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.b{
+    font-size: 20px;
+    font-weight: bold;
+}

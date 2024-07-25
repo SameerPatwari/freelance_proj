@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Background Example</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .background {
+            background-image: url('./assets//img/light-bulb.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center top;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translateY(0px); /* Initialize transform */
+        }
+
+        .content {
+            position: relative;
+            top: 100%;
+            z-index: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255); /* Semi-transparent background for better readability */
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .section {
+            padding: 50px 20px;
+        }
+
+        h1, h2, p {
+            margin: 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background" id="background"></div>
+
+    <div class="content">
+        <div class="section">
+            <h1>Welcome to Our Website</h1>
+            <p>This is an example of a webpage with a fixed background image and scrolling content.</p>
+        </div>
+        <div class="section">
+            <h2>About Us</h2>
+            <p>We provide the best services to our customers. Scroll down to learn more about what we offer.</p>
+        </div>
+        <div class="section">
+            <h2>Our Services</h2>
+            <p>Here are some of our featured services...</p>
+        </div>
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us at any time.</p>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrolled = window.scrollY;
+            const background = document.getElementById('background');
+            background.style.transform = `translateY(-${scrolled * 1}px)`; // Adjust the factor to control the speed of the parallax effect
+        });
+    </script>
+</body>
+</html>
